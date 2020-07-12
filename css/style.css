@@ -1,0 +1,218 @@
+﻿@charset "utf-8";
+/*-------------------------------------------
+    Copyright © 2014 Conalep Chiapa de Corzo
+
+    Style
+    
+    © DIEGO CARMONA BERNAL
+-------------------------------------------*/
+/*-------------------------------------------
+    Estructura
+-------------------------------------------*/
+* { margin: 0; padding: 0; line-height: 1; }
+
+body { font: normal 60% Arial; background-color: #f3f3f1; }
+
+.margin { width: 980px; margin: 0 auto; }
+.margin:after { content: ""; display: block; clear: both; }
+
+.listing { list-style-type: none; }
+
+.image { margin: 0 0 5px; max-width: 100%; }
+
+.image-border { margin: 0 0 5px; max-width: 98%; border: 5px solid #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+
+.image-noticia { margin: 0 0 5px; max-width: 97.5%; border: 8px solid #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+
+h2 { font: normal 2.2em Georgia; color: #000; }
+h3 { font: 2.2em Georgia; }
+h4 { font: bold 1.2em Arial; margin-top: 4px; margin-bottom: 10px; color: #000; }
+h4 a { text-decoration: none; color: #000; }
+h2 a:hover, h3 a:hover, h4 a:hover { text-decoration: underline; }
+
+/*-------------------------------------------
+    Header
+-------------------------------------------*/
+.header li { float: left; list-style: none; }
+.header li a { text-decoration: none; }
+
+.header-mobile { display: none; }
+.header-mobile a.search-mobile, .header-mobile a.header-nav-mobile { display: none; }
+
+.logo { float: left; }
+.logo a { background: url(../images/conalep/logo.png) no-repeat 0 0; width: 194px; height: 58px; display: block; text-indent: -10000px; }
+
+/*-------------------------------------------
+	Header-Nav
+-------------------------------------------*/
+.header-nav { background: #000; border-top: 4px solid #177422; height: 38px; margin-bottom: 25px; }
+.header-nav ul { float: left; width: 755px; }
+.header-nav li { margin: 14px 0 0 25px; font-size: 1.1em; }
+.header-nav li a { color: #fff; font-weight: bold; }
+.header-nav li a:hover { text-decoration: underline; }
+.header-nav form { margin: 6px 0 0 0; }
+
+.searchtext { background: #fff; color: #000; font-size: 1.5em; border: none; float: left; width: 175px; padding-left: 5px; height: 25px; }
+
+.searchtext-btn { background-image: url(../images/conalep/btn_search.jpg); float: left; width: 25px; height: 25px; text-indent: -10000px; border: none; cursor: pointer; }
+
+/*-------------------------------------------
+	Nav
+-------------------------------------------*/
+.nav { float: right; margin-top: 8px; margin-bottom: 35px; margin-right: -18px; font-size: 1.4em; }
+.nav li a { display: block; text-indent: -10000px; }
+.nav a { background: url(../images/conalep/nav.jpg) no-repeat 0 0; position: relative; height: 39px; }
+.nav li:hover a { z-index: 101; }
+.nav ul { display: none; position: absolute; margin-top: -1px; width: 223px; padding-bottom: 10px; background: #f3f3f1; border: 1px solid #d7d7d7; }
+.nav li:hover ul { display: block; z-index: 100; }
+.nav ul li { float: none; }
+.nav ul a { background: none; text-indent: 0; color: #000; height: auto; padding: 8px 10px 7px; }
+.nav ul a:hover { background: #177422; color:#fff; }
+
+.nav .informacion-institucional { width: 183px; }
+.nav li:hover .informacion-institucional { background-position: 0 -80px; }
+.nav li .informacion-institucional:hover { background-position: 0 -40px; }
+
+
+.nav .actividades { background-position: -182px 0; width: 209px; }
+.nav li:hover .actividades { background-position: -182px -80px; }
+.nav li .actividades:hover { background-position: -182px -40px; }
+
+.nav .boletines { background-position: -390px 0; width: 168px; }
+.nav li:hover .boletines { background-position: -390px -80px; }
+.nav li .boletines:hover { background-position: -390px -40px; }
+
+.nav .sistemas { background-position: -557px 0; width: 190px; }
+.nav li:hover .sistemas { background-position: -557px -80px; }
+.nav li .sistemas:hover { background-position: -557px -40px; }
+
+/*-------------------------------------------
+    Sections
+-------------------------------------------*/
+.section-news { background: #f3f3f1 url("../images/conalep/bg_conalep.png") no-repeat center 90px fixed; padding-bottom: 25px; padding-top: 30px; }
+
+.section { background: #f3f3f1 url("../images/conalep/bg_conalep.png") no-repeat center -60px fixed; padding-bottom: 30px; }
+
+.box-title { background: #262626; padding: 0 0 114px; }
+.box-title + .margin { margin-top: -90px; }
+.box-title h1 { color: #fff; font: normal 3.5em Georgia, "Times New Roman", serif; }
+.box-title p { color: #fff; font: normal 2.4em Georgia, "Times New Roman", serif; margin-top: 15px; }
+
+.ancle { width: 978px; margin: 0 auto 20px; padding-top: 18px; }
+.ancle li { float: left; list-style: none; font-size: 1.2em; }
+.ancle li:after { content: "/"; margin: 0 5px 0 5px; color: #fff; }
+.ancle a { color: #fff; font-weight: bold; text-decoration: none; }
+.ancle a:hover { text-decoration: underline; }
+
+.article { background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); border-top: 4px solid #177422; float: left; width: 682px; padding: 20px 25px; }
+.article .padding { padding-bottom: 202px; }
+.article ul { margin-left: 2.5%; }
+.article h2 { margin: 0 0 20px; }
+.article h3 { margin: 0 0 10px; font-size: 2em; }
+.article p { font-size: 1.4em; font-family: "Georgia","Times New Roman",serif; line-height: 1.5; }
+.article a { text-decoration: none; color: #177422; }
+.article a:hover { text-decoration: underline; }
+
+.article-oferta-educativa { background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); border-top: 4px solid #177422; float: left; width: 930px; padding: 20px 25px; }
+.hiden { display: none; }
+
+.article-margin { background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); border-top: 4px solid #177422; float: left; width: 930px; padding: 20px 25px; }
+.article-margin p { font-size: 2em; line-height: 1.5; }
+
+.divide-article-noticia { float: left; width: 48%; margin-left: 3%; }
+.divide-article-noticia img { margin: 0 0 5px; max-width: 100%; border: 5px solid #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+.divide-article-noticia h3 { margin: 0 0 10px; }
+.divide-article-noticia h4 { font-size: 1.4em; }
+.divide-article-noticia .listing a { text-decoration: none; }
+.divide-article-noticia .listing a:hover h4 { color: #177422; }
+
+.divide-article { float: left; width: 48%; margin-left: 2.5%; }
+.divide-article h3 { margin: 0 0 10px; }
+.divide-article .listing a { text-decoration: none; }
+.divide-article .listing a:hover h4 { color: #177422; }
+.first{ margin-left: 0; }
+
+.main { background-color: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); border-top: 4px solid #177422; float: right; width: 223px; }
+.main li { list-style: none; font-size: 1.2em; }
+.main a, .main p{ display: block; padding: 13px 14px 9px; color: #000; font-weight: bold; text-decoration: none; line-height: 1.5; }
+.main a:hover { color: #177422; }
+.main p { background: #16511b; color: #fff; }
+
+.sitemap { margin-bottom: 15px; text-transform: uppercase; }
+.sitemap h3 { font-size: 2em; }
+.sitemap ul{ margin-left: 20px; }
+.sitemap li { line-height: 2; font-size: 1.2em; font-weight: bold; }
+.sitemap a, .sitemap h3 a { color: #000; text-decoration: none; }
+.sitemap a:hover { color: #177422; }
+
+/*-------------------------------------------
+    Items-News
+-------------------------------------------*/
+.items-news .listing { padding-left: 1px; position: relative; }
+.items-news .firstp { margin-left: 0; }
+.items-news .first { margin-left: 0; }
+.items-news ul { background: url(../images/conalep/items.png) no-repeat bottom; }
+.items-news ul { margin: 0 0 2em; }
+.items-news ul:after { content: ""; display: block; clear: both; }
+.items-news li { float: left; width: 315px; margin-left: 17px; padding: 0px 0px 35px; }
+.items-news h3 { margin: 10px 13px; }
+.items-news h3 a { color: #000; text-decoration: none; }
+.items-news h3 a:hover { text-decoration: underline; }
+.items-news p { margin: 13px; font-size: 1.4em; line-height: 1.5; }
+
+.item { border-top: 4px solid #177422; }
+.item .image { margin: 0; }
+.item .padding1 { padding-bottom: 0px; }
+.item .padding2 { padding-bottom: 0px; }
+.item .padding3 { padding-bottom: 0px; }
+.item .padding4 { padding-bottom: 0px; }
+.item .padding5 { padding-bottom: 0px; }
+.item .padding6 { padding-bottom: 0px; }
+.item .padding7 { padding-bottom: 0px; }
+.item .padding8 { padding-bottom: 0px; }
+.item .padding9 { padding-bottom: 0px; }
+.item .padding10 { padding-bottom: 0px; }
+
+.more { color: #177422; text-decoration: none; font-family: Georgia, "Times New Roman", serif; }
+.more:hover { text-decoration: underline; }
+
+.items-news .data { position: absolute; color: #b5b5b5; font-size: 1.1em; font-weight: bold; }
+
+/*-------------------------------------------
+    Galeria
+-------------------------------------------*/
+.galeria { background: #262626; height: 340px; }
+.galeria-mobil { display: none; position: relative; }
+
+.data-galeria-mobil { position: absolute; bottom:6%; margin-right:0.5em; z-index: 50; background-color:#FFF; color:#000; padding:6px; font-family: Tahoma,Arial,Helvetica; font-size: 1.4em; }
+
+/*-------------------------------------------
+    Footer And Sub-Footer
+-------------------------------------------*/
+.footer { background: #000; padding-top: 30px; padding-bottom: 30px; }
+.footer .logo a { background-image: url(../images/conalep/logo_footer.png); margin-top: 7px; }
+.chiapas-nos-une { background: url(../images/conalep/chiapas_nos_une.png) no-repeat 0 0; width: 194px; height: 59px; float: right; margin-top: 6px; }
+.footer address { float: left; margin-left: 30px; color: #fff; font: 1.4em/1.43 "Times New Roman"; }
+
+.sub-footer { background: #262626; color: #fff; padding: 10px 0 10px; }
+.sub-footer ul:after { content: ""; display: block; clear: both; }
+.sub-footer li { float: left; margin-right: 15px; list-style: none; }
+.sub-footer li a { color: #fff; font-size: 1em; font-weight: bold; text-decoration: none; }
+.sub-footer a:hover { text-decoration: underline; }
+
+/*-------------------------------------------
+    
+-------------------------------------------*/
+.box-title-login { background: #262626; padding: 0 0 200px; }
+.box-title-login + .login-block { margin-top: -90px; }
+
+.all-content-login { background: #f3f3f1 url("../images/conalep/bg_conalep.png") no-repeat center 180px fixed; }
+.all-content-login { padding-bottom: 28%; }
+
+.login-block { display: block; margin: 0 auto; width: 400px; height: 250px; background-color: #fff; border-top: 4px solid #177422; box-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+
+.search-page { float: left; margin-bottom: 25px; }
+
+.search-page  .searchtext { background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.3); color: #000; font-size: 1.5em; border: none; float: left; width: 250px; padding-left: 5px; height: 35px; }
+
+.search-page  .searchtext-btn { background: #177422; box-shadow: 0 1px 2px rgba(0,0,0,0.3); float: left; width: 75px; height: 35px; text-indent: 0; color: #fff; font-weight: bold; border: none; cursor: pointer; }
