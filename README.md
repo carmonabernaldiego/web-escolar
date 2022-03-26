@@ -1,5 +1,5 @@
 # web_escolar
 
-Sitio Web Escolar
+Sitio Web Escolar.
 
 http://school.mysoftup.com
