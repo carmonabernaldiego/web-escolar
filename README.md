@@ -1,4 +1,4 @@
-# web-escolar
+# Web Escolar
 
 Sitio Web Escolar.
 
