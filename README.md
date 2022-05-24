@@ -1,4 +1,4 @@
-# web_escolar
+# web-escolar
 
 Sitio Web Escolar.
 
